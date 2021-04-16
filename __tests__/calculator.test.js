@@ -30,16 +30,16 @@ describe("Calculator", () => {
     person.jupiterCalc()
     expect(person.jupiterAge).toEqual(4.22)
   })
-
-  test("should correctly calculate the life expectancy of the user given their gender is 'male' and country of residence is 'USA'", () => {
-    person.earthExpectancy()
-    expect(person.earthLife).toEqual(76.2)
-  })
-
+  
   test("should correctly calculate the life expectancy of the user given their gender is 'female' and country of residence is 'USA'", () => {
     const newPerson = new Calculator(0, "female", "USA")
     newPerson.earthExpectancy()
     expect(newPerson.earthLife).toEqual(81.2)
+  })
+  
+  test("should correctly calculate the life expectancy of the user given their gender is 'male' and country of residence is 'USA'", () => {
+    person.earthExpectancy()
+    expect(person.earthLife).toEqual(76.2)
   })
 
   test("should correctly calculate the life expectancy of the user given their gender is 'non-binary/gender-fluid' and country of residence is 'USA'", () => {
@@ -58,6 +58,12 @@ describe("Calculator", () => {
     const newPerson = new Calculator(0, "prefer not to say", "USA")
     newPerson.earthExpectancy()
     expect(newPerson.earthLife).toEqual(78.7)
+  })
+
+  test("should correctly calculate the life expectancy of the user given their gender is 'female' and country of residence is not 'USA'", () => {
+    const newPerson = new Calculator(0, "female", "Canada")
+    newPerson.earthExpectancy()
+    expect(newPerson.earthLife).toEqual(75.20)
   })
 
 })
