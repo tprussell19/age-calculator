@@ -16,4 +16,9 @@ describe("Calculator", () => {
     expect(person.mercuryAge).toEqual(208.33)
   })
 
+  test("should correctly calculate the age of a person in Venus years", () => {
+    person.venusCalc()
+    expect(person.venusAge).toEqual(80.64)
+  })
+
 })

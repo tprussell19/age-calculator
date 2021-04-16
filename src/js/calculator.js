@@ -9,4 +9,8 @@ export default class Calculator {
     this.mercuryAge = parseFloat((this.age / .24).toFixed(2))
   }
 
+  venusCalc() {
+    
+  }
+
 }
