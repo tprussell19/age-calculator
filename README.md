@@ -15,17 +15,17 @@ _This application takes a user's inputted age and returns their age in solay yea
 * A text editor like [VS Code](https://code.visualstudio.com/)
 
 ### Installation
-1. Clone the repository: `$ git clone https://github.com/account/my-project`
-2. Navigate to the `my-project/` directory on your computer
+1. Clone the repository: `$ git clone https://github.com/tprussell19/age-calculator`
+2. Navigate to the `age-calculator/` directory on your computer
 3. Open with your preferred text editor to view the code base
 4. To start a development server and view the project in the browser:
-    * Navigate to `my-project/` in your command line
+    * Navigate to `age-calculator/` in your command line
     * Run the command `npm install` to install dependencies
     * Optionally, run the commmand `npm run build` to make a bundle of the files
     * Finally, run the command `npm run start` to start a development server
-5. To run tests, navigate to `my-project/` in your terminal and run the command `npm run test`
+5. To run tests, navigate to `age-calculator/` in your terminal and run the command `npm run test`
 
-#### Find my website here: https://tprussell19.github.io/project-name !
+#### Find my website here: https://tprussell19.github.io/age-calculator !
 
 ## Tests/Specs
 
