@@ -14,7 +14,7 @@ export default class Calculator {
   }
 
   marsCalc() {
-    
+    this.marsAge = parseFloat((this.age / 1.88).toFixed(2))
   }
 
 }
