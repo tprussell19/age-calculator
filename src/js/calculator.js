@@ -4,4 +4,9 @@ export default class Calculator {
     this.gender = gender
     this.country = country
   }
+
+  mercuryCalc() {
+    
+  }
+
 }
