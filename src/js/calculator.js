@@ -39,6 +39,8 @@ export default class Calculator {
         this.earthLife = 75.2
       } else if (this.gender === "male") {
         this.earthLife = 70.4
+      } else if (this.gender === "non-binary/gender-fluid") {
+
       }
     }
   }
