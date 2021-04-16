@@ -13,4 +13,8 @@ export default class Calculator {
     this.venusAge = parseFloat((this.age / .62).toFixed(2))
   }
 
+  marsCalc() {
+    
+  }
+
 }
