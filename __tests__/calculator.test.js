@@ -26,4 +26,9 @@ describe("Calculator", () => {
     expect(person.marsAge).toEqual(26.60)
   })
 
+  test("should correctly calculate the age of a person in Jupiter years", () => {
+    person.jupiterCalc()
+    expect(person.jupiterAge).toEqual(4.22)
+  })
+
 })
