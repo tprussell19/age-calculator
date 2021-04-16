@@ -1,7 +1,7 @@
 {
-  "name": "template_wp_eslint_jest",
+  "name": "age-calculator",
   "version": "1.0.0",
-  "description": "---",
+  "description": "calculate-age-in-solar-years",
   "main": "src/main.js",
   "scripts": {
     "test": "jest --coverage",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tprussell19/template_wp_eslint_jest"
+    "url": "git+https://github.com/tprussell19/age-calculator"
   },
   "author": "Usarneme",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tprussell19/template_wp_eslint_jest/issues"
+    "url": "https://github.com/tprussell19/age-calculator/issues"
   },
-  "homepage": "https://github.com/tprussell19/template_wp_eslint_jest#readme",
+  "homepage": "https://github.com/tprussell19/age-calculator#readme",
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",

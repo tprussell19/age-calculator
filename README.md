@@ -1,16 +1,14 @@
-# _Project Name Here_
+# _Super Galactic Age Calculator_
 
-#### _Short Description, date_
+#### _Calculate's users age in solar years for various planets, 4/16/21_
 
 #### By _Thomas Russell_
 
 ## Description
 
-_longer description_
+_This application takes a user's inputted age and returns their age in solay years for the planets Mercury, Venus, Mars and Jupiter. It will also calculate the user's life expectancy based on each planet's solar years._
 
 ## Setup/Installation Requirements
-
-## Setup and Use
 
 ### Prerequisites
 * [Node](https://nodejs.org/en/)
