@@ -12,6 +12,7 @@ describe("Calculator", () => {
   })
 
   test("should correctly calculate the age of a person in Mercury years", () => {
+    mercuryCalc()
     expect(person.mercuryAge).toEqual(208.33)
   })
 

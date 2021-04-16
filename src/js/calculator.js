@@ -6,7 +6,6 @@ export default class Calculator {
   }
 
   mercuryCalc() {
-    
   }
 
 }
