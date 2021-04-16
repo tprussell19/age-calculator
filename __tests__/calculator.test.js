@@ -31,4 +31,10 @@ describe("Calculator", () => {
     expect(person.jupiterAge).toEqual(4.22)
   })
 
+  test("should correctly calculate the life expectancy of the user given their gender is 'male' and country of residence is 'USA'", () => {
+    person.earthExpectancy()
+    expect(person.earthLife).toEqual(76.2)
+  })
+
+
 })

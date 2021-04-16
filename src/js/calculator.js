@@ -21,4 +21,20 @@ export default class Calculator {
     this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2))
   }
 
+  earthExpectancy() {
+    if (this.country === "USA") {
+      if (this.gender === "female") {
+        this.earthLife = 81.2
+      } else if (this.gender === "male") {
+        this.earthLife = 76.2
+      } else if (this.gender === "non-binary/gender-fluid") {
+        this.earthLife = 78.7
+      } else if (this.gender === "other") {
+        this.earthLife = 78.7
+      } else if (this.gender === "prefer not to say") {
+        this.earthLife = 78.7
+      }
+    }
+  }
+
 }
