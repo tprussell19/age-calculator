@@ -37,6 +37,8 @@ export default class Calculator {
     } else {
       if (this.gender === "female") {
         this.earthLife = 75.2
+      } else if (this.gender === "male") {
+        this.earthLife = 70.4
       }
     }
   }
