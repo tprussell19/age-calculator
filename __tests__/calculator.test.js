@@ -54,4 +54,10 @@ describe("Calculator", () => {
     expect(newPerson.earthLife).toEqual(78.7)
   })
 
+  test("should correctly calculate the life expectancy of the user given their gender is 'prefer not to say' and country of residence is 'USA'", () => {
+    const newPerson = new Calculator(0, "prefer not to say", "USA")
+    newPerson.earthExpectancy()
+    expect(newPerson.earthLife).toEqual(78.7)
+  })
+
 })
