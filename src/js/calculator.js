@@ -44,7 +44,7 @@ export default class Calculator {
       } else if (this.gender === "other") {
         this.earthLife = 72.6
       } else if (this.gender === "prefer not to say") {
-
+        this.earthLife = 72.6
       }
     }
   }
