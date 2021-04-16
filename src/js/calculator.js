@@ -49,4 +49,8 @@ export default class Calculator {
     }
   }
 
+  yearsLeft() {
+    
+  }
+
 }

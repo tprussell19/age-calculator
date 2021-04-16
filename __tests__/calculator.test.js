@@ -90,4 +90,9 @@ describe("Calculator", () => {
     expect(newPerson.earthLife).toEqual(72.6)
   })
 
+  test("should accurately return how many years a user has left to live on each planet", () => {
+    person.yearsLeft()
+    expect(person.earthYearsLeft).toEqual(26.2)
+  })
+
 })
