@@ -6,7 +6,7 @@ export default class Calculator {
   }
 
   mercuryCalc() {
-
+    this.mercuryAge = parseFloat((this.age / .24).toFixed(2))
   }
 
 }
