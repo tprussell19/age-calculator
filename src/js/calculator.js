@@ -18,7 +18,7 @@ export default class Calculator {
   }
 
   jupiterCalc() {
-    
+    this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2))
   }
 
 }
