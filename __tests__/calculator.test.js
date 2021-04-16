@@ -13,22 +13,22 @@ describe("Calculator", () => {
 
   test("should correctly calculate the age of a person in Mercury years", () => {
     person.mercuryCalc()
-    expect(person.mercuryAge).toEqual(208.33)
+    expect(person.mercuryAge).toEqual(208.3)
   })
 
   test("should correctly calculate the age of a person in Venus years", () => {
     person.venusCalc()
-    expect(person.venusAge).toEqual(80.65)
+    expect(person.venusAge).toEqual(80.6)
   })
 
   test("should correctly calculate the age of a person in Mars years", () => {
     person.marsCalc()
-    expect(person.marsAge).toEqual(26.60)
+    expect(person.marsAge).toEqual(26.6)
   })
 
   test("should correctly calculate the age of a person in Jupiter years", () => {
     person.jupiterCalc()
-    expect(person.jupiterAge).toEqual(4.22)
+    expect(person.jupiterAge).toEqual(4.2)
   })
   
   test("should correctly calculate the life expectancy of the user given their gender is 'female' and country of residence is 'USA'", () => {
@@ -91,6 +91,7 @@ describe("Calculator", () => {
   })
 
   test("should accurately return how many years a user has left to live on each planet", () => {
+    person.earthExpectancy()
     person.yearsLeft()
     expect(person.earthYearsLeft).toEqual(26.2)
   })

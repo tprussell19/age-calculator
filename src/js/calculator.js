@@ -6,19 +6,19 @@ export default class Calculator {
   }
 
   mercuryCalc() {
-    this.mercuryAge = parseFloat((this.age / .24).toFixed(2))
+    this.mercuryAge = parseFloat((this.age / .24).toFixed(1))
   }
 
   venusCalc() {
-    this.venusAge = parseFloat((this.age / .62).toFixed(2))
+    this.venusAge = parseFloat((this.age / .62).toFixed(1))
   }
 
   marsCalc() {
-    this.marsAge = parseFloat((this.age / 1.88).toFixed(2))
+    this.marsAge = parseFloat((this.age / 1.88).toFixed(1))
   }
 
   jupiterCalc() {
-    this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2))
+    this.jupiterAge = parseFloat((this.age / 11.86).toFixed(1))
   }
 
   earthExpectancy() {
@@ -50,7 +50,7 @@ export default class Calculator {
   }
 
   yearsLeft() {
-    
+    this.earthYearsLeft = parseFloat((this.earthLife - this.age).toFixed(1))
   }
 
 }
