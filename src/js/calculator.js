@@ -54,7 +54,7 @@ export default class Calculator {
     this.mercuryYearsLeft = parseFloat((this.earthLife - this.mercuryAge).toFixed(1))
     this.venusYearsLeft = parseFloat((this.earthLife - this.venusAge).toFixed(1))
     this.marsYearsLeft = parseFloat((this.earthLife - this.marsAge).toFixed(1))
-
+    this.jupiterYearsLeft = parseFloat((this.earthLife - this.jupiterAge).toFixed(1))
   }
 
 }
