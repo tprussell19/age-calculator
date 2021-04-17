@@ -92,6 +92,7 @@ describe("Calculator", () => {
 
   test("should accurately return how many years a user has left to live on each planet", () => {
     person.earthExpectancy()
+    person.mercuryCalc()
     person.yearsLeft()
     expect(person.earthYearsLeft).toEqual(26.2)
     expect(person.mercuryYearsLeft).toEqual(-132.1)

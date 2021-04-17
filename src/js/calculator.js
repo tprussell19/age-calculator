@@ -51,7 +51,7 @@ export default class Calculator {
 
   yearsLeft() {
     this.earthYearsLeft = parseFloat((this.earthLife - this.age).toFixed(1))
-
+    this.mercuryYearsLeft = parseFloat((this.earthLife - this.mercuryAge).toFixed(1))
   }
 
 }
