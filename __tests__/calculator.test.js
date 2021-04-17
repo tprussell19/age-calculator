@@ -94,6 +94,7 @@ describe("Calculator", () => {
     person.earthExpectancy()
     person.yearsLeft()
     expect(person.earthYearsLeft).toEqual(26.2)
+    expect(person.mercuryYearsLeft).toEqual(-132.1)
   })
 
 })

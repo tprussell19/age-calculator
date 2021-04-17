@@ -51,6 +51,7 @@ export default class Calculator {
 
   yearsLeft() {
     this.earthYearsLeft = parseFloat((this.earthLife - this.age).toFixed(1))
+
   }
 
 }
