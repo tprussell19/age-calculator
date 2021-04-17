@@ -30,13 +30,13 @@ describe("Calculator", () => {
     person.jupiterCalc()
     expect(person.jupiterAge).toEqual(4.2)
   })
-  
+
   test("should correctly calculate the life expectancy of the user given their gender is 'female' and country of residence is 'USA'", () => {
     const newPerson = new Calculator(0, "female", "USA")
     newPerson.earthExpectancy()
     expect(newPerson.earthLife).toEqual(81.2)
   })
-  
+
   test("should correctly calculate the life expectancy of the user given their gender is 'male' and country of residence is 'USA'", () => {
     person.earthExpectancy()
     expect(person.earthLife).toEqual(76.2)
@@ -93,9 +93,11 @@ describe("Calculator", () => {
   test("should accurately return how many years a user has left to live on each planet", () => {
     person.earthExpectancy()
     person.mercuryCalc()
+    person.venusCalc()
     person.yearsLeft()
     expect(person.earthYearsLeft).toEqual(26.2)
     expect(person.mercuryYearsLeft).toEqual(-132.1)
+    expect(person.venusYearsLeft).toEqual(-4.4)
   })
 
 })
