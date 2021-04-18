@@ -65,6 +65,8 @@ export default class Calculator {
     } else if (this.earthYearsLeft === 0) {
       this.earthReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories!"
       return this.earthReturn
+    } else {
+
     }
   }
 
