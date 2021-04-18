@@ -66,7 +66,10 @@ export default class Calculator {
       this.earthReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories!"
       return this.earthReturn
     } else {
-
+      this.earthReturn;
+      this.earthYearsLeft = -this.earthYearsLeft
+      this.earthReturn = "Congrats! You have already passed the average life expectancy for a person in your demographic categories on Earth by " + `${this.earthYearsLeft}` + " years!"
+      return this.earthReturn
     }
   }
 
