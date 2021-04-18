@@ -131,4 +131,12 @@ describe("Calculator", () => {
     expect(person.earthReturn).toEqual("Hooray! The average life expectancy on Earth is still 26.2 years away for you!")
   })
 
+  test("should provide a different return given age = life expectancy on Earth", () => {
+    const newPerson = new Calculator(81.2, "female", "USA")
+    newPerson.earthExpectancy()
+    newPerson.yearsLeft()
+    newPerson.returnText()
+    expect(newPerson.earthReturn).toEqual("Wow! You have exactly reached the average life expectancy for a person in your demographic categories!")
+  })
+
 })

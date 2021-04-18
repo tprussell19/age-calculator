@@ -62,6 +62,8 @@ export default class Calculator {
     if (this.earthYearsLeft > 0) {
       this.earthReturn = "Hooray! The average life expectancy on Earth is still " + `${this.earthYearsLeft}` + " years away for you!"
       return this.earthReturn
+    } else if (this.earthYearsLeft === 0) {
+      
     }
   }
 
