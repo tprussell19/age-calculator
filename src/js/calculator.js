@@ -57,4 +57,9 @@ export default class Calculator {
     this.jupiterYearsLeft = parseFloat((this.earthLife - this.jupiterAge).toFixed(1))
   }
 
+  returnText() {
+
+    }
+  }
+
 }

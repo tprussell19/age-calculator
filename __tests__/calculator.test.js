@@ -123,5 +123,10 @@ describe("Calculator", () => {
     person.yearsLeft()
     expect(person.jupiterYearsLeft).toEqual(72.0)
   })
-  
+
+  test("should provide a different return given positive or negative life expectancy on Earth", () => {
+    person.returnText()
+    expect(earthReturn).toEqual("Hooray! The average life expectancy on Earth is still 26.2 years away for you!")
+  })
+
 })
