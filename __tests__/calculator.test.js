@@ -90,18 +90,38 @@ describe("Calculator", () => {
     expect(newPerson.earthLife).toEqual(72.6)
   })
 
-  test("should accurately return how many years a user has left to live on each planet", () => {
+  test("should accurately return how many years a user has left to live on Earth", () => {
     person.earthExpectancy()
-    person.mercuryCalc()
-    person.venusCalc()
-    person.marsCalc()
-    person.jupiterCalc()
     person.yearsLeft()
     expect(person.earthYearsLeft).toEqual(26.2)
-    expect(person.mercuryYearsLeft).toEqual(-132.1)
-    expect(person.venusYearsLeft).toEqual(-4.4)
-    expect(person.marsYearsLeft).toEqual(49.6)
-    expect(person.jupiterYearsLeft).toEqual(72.0)
   })
 
+  test("should accurately return how many years a user has left to live on Mercury", () => {
+    person.earthExpectancy()
+    person.mercuryCalc()
+    person.yearsLeft()
+    expect(person.mercuryYearsLeft).toEqual(-132.1)
+  })
+
+  test("should accurately return how many years a user has left to live on Venus", () => {
+    person.earthExpectancy()
+    person.venusCalc()
+    person.yearsLeft()
+    expect(person.venusYearsLeft).toEqual(-4.4)
+  })
+
+  test("should accurately return how many years a user has left to live on Mars", () => {
+    person.earthExpectancy()
+    person.marsCalc()
+    person.yearsLeft()
+    expect(person.marsYearsLeft).toEqual(49.6)
+  })
+
+  test("should accurately return how many years a user has left to live on Jupiter", () => {
+    person.earthExpectancy()
+    person.jupiterCalc()
+    person.yearsLeft()
+    expect(person.jupiterYearsLeft).toEqual(72.0)
+  })
+  
 })
