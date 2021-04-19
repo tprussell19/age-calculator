@@ -254,5 +254,4 @@ describe("Calculator", () => {
     newPerson.jupiterReturnText()
     expect(newPerson.jupiterReturn).toEqual("Congrats! You have already passed the average life expectancy for a person in your demographic categories on Jupiter by 9.1 years!")
   })
-
 })

@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application takes a user's inputted age and returns their age in solay years for the planets Mercury, Venus, Mars and Jupiter. It will also calculate the user's life expectancy based on each planet's solar years._
+_This application takes a user's inputted age and returns their age in solay years for the planets Mercury, Venus, Mars, and Jupiter. It also calculates the user's life expectancy on each planet._
 
 ## Setup/Installation Requirements
 
@@ -25,7 +25,6 @@ _This application takes a user's inputted age and returns their age in solay yea
     * Finally, run the command `npm run start` to start a development server
 5. To run tests, navigate to `age-calculator/` in your terminal and run the command `npm run test`
 
-#### Find my website here: https://tprussell19.github.io/age-calculator !
 
 ## Tests/Specs
 
