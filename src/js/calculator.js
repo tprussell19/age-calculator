@@ -122,6 +122,8 @@ export default class Calculator {
     } else if (this.jupiterYearsLeft === 0) {
       this.jupiterReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Jupiter!"
       return this.jupiterReturn
+    } else {
+      
     }
   }
 
