@@ -123,7 +123,9 @@ export default class Calculator {
       this.jupiterReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Jupiter!"
       return this.jupiterReturn
     } else {
-      
+      this.jupiterYearsLeft = -this.jupiterYearsLeft
+      this.jupiterReturn = "Congrats! You have already passed the average life expectancy for a person in your demographic categories on Jupiter by " + `${this.jupiterYearsLeft}` + " years!"
+      return this.jupiterReturn
     }
   }
 
