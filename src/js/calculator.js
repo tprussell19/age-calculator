@@ -57,7 +57,7 @@ export default class Calculator {
     this.jupiterYearsLeft = parseFloat((this.earthLife - this.jupiterAge).toFixed(1))
   }
 
-  returnText() {
+  earthReturnText() {
     this.earthReturn;
     if (this.earthYearsLeft > 0) {
       this.earthReturn = "Hooray! The average life expectancy on Earth is still " + `${this.earthYearsLeft}` + " years away for you!"
@@ -70,6 +70,14 @@ export default class Calculator {
       this.earthYearsLeft = -this.earthYearsLeft
       this.earthReturn = "Congrats! You have already passed the average life expectancy for a person in your demographic categories on Earth by " + `${this.earthYearsLeft}` + " years!"
       return this.earthReturn
+    }
+  }
+
+  mercuryReturnText() {
+    this.mercuryReturn;
+    if (this.mercuryYearsLeft > 0) {
+      this.mercuryReturn = "Hooray! The average life expectancy on Mercury is still " + `${this.mercuryYearsLeft}` + " years away for you!"
+      return this.mercuryReturn
     }
   }
 
