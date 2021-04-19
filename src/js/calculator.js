@@ -94,6 +94,8 @@ export default class Calculator {
     } else if (this.venusYearsLeft === 0) {
       this.venusReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Venus!"
       return this.venusReturn
+    } else {
+
     }
   }
 
