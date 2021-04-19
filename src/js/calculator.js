@@ -81,6 +81,8 @@ export default class Calculator {
     } else if (this.mercuryYearsLeft === 0) {
       this.mercuryReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Mercury!"
       return this.mercuryReturn
+    } else {
+      
     }
   }
 
