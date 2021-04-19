@@ -210,13 +210,22 @@ describe("Calculator", () => {
     expect(newPerson.marsReturn).toEqual("Hooray! The average life expectancy on Mars is still 59.3 years away for you!")
   })
 
-  test("should provide a different return given age < life expectancy on Mars", () => {
+  test("should provide a different return given age = life expectancy on Mars", () => {
     const newPerson = new Calculator(136.488, "prefer not to say", "France")
     newPerson.earthExpectancy()
     newPerson.marsCalc()
     newPerson.yearsLeft()
     newPerson.marsReturnText()
     expect(newPerson.marsReturn).toEqual("Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Mars!")
+  })
+
+  test("should provide a different return given age > life expectancy on Mars", () => {
+    const newPerson = new Calculator(150, "prefer not to say", "France")
+    newPerson.earthExpectancy()
+    newPerson.marsCalc()
+    newPerson.yearsLeft()
+    newPerson.marsReturnText()
+    expect(newPerson.marsReturn).toEqual("Congrats! You have already passed the average life expectancy for a person in your demographic categories on Venus by 7.2 years!")
   })
 
 })
