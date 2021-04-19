@@ -116,7 +116,10 @@ export default class Calculator {
   }
 
   jupiterReturnText() {
-    
+    if (this.jupiterYearsLeft > 0) {
+      this.jupiterReturn = "Hooray! The average life expectancy on Jupiter is still " + `${this.jupiterYearsLeft}` + " years away for you!"
+      return this.jupiterReturn
+    }
   }
 
 }
