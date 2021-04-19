@@ -89,7 +89,8 @@ export default class Calculator {
 
   venusReturnText() {
     if (this.venusYearsLeft > 0) {
-      
+      this.venusReturn = "Hooray! The average life expectancy on Venus is still " + `${this.venusYearsLeft}` + " years away for you!"
+      return this.venusReturn
     }
   }
 
