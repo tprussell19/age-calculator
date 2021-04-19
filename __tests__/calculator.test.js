@@ -237,4 +237,13 @@ describe("Calculator", () => {
     expect(newPerson.jupiterReturn).toEqual("Hooray! The average life expectancy on Jupiter is still 67.9 years away for you!")
   })
 
+  test("should provide a different return given age = life expectancy on Jupiter", () => {
+    const newPerson = new Calculator(891.872, "female", "Egypt")
+    newPerson.earthExpectancy()
+    newPerson.jupiterCalc()
+    newPerson.yearsLeft()
+    newPerson.jupiterReturnText()
+    expect(newPerson.jupiterReturn).toEqual("Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Jupiter!")
+  })
+
 })
