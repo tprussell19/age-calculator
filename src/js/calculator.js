@@ -87,4 +87,10 @@ export default class Calculator {
     }
   }
 
+  venusReturnText() {
+    if (this.venusYearsLeft > 0) {
+      
+    }
+  }
+
 }
