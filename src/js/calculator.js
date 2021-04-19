@@ -105,6 +105,8 @@ export default class Calculator {
     if (this.marsYearsLeft > 0) {
       this.marsReturn = "Hooray! The average life expectancy on Mars is still " + `${this.marsYearsLeft}` + " years away for you!"
       return this.marsReturn
+    } else if (this.marsYearsLeft === 0) {
+      
     }
   }
 
