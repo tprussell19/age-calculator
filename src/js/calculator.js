@@ -115,4 +115,8 @@ export default class Calculator {
     }
   }
 
+  jupiterReturnText() {
+    
+  }
+
 }
