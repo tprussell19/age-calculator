@@ -198,7 +198,7 @@ describe("Calculator", () => {
     newPerson.venusCalc()
     newPerson.yearsLeft()
     newPerson.venusReturnText()
-    expect(newPerson.venusReturn).toEqual("Congrats! You have already passed the average life expectancy for a person in your demographic categories on Mercury by 32.2 years!")
+    expect(newPerson.venusReturn).toEqual("Congrats! You have already passed the average life expectancy for a person in your demographic categories on Venus by 32.2 years!")
   })
 
 })

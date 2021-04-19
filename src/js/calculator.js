@@ -95,7 +95,9 @@ export default class Calculator {
       this.venusReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Venus!"
       return this.venusReturn
     } else {
-
+      this.venusYearsLeft = -this.venusYearsLeft
+      this.venusReturn = "Congrats! You have already passed the average life expectancy for a person in your demographic categories on Venus by " + `${this.venusYearsLeft}` + " years!"
+      return this.venusReturn
     }
   }
 
