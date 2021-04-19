@@ -101,4 +101,10 @@ export default class Calculator {
     }
   }
 
+  marsReturnText() {
+    if (this.marsYearsLeft > 0) {
+
+    }
+  }
+
 }

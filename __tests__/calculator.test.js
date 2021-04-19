@@ -201,4 +201,13 @@ describe("Calculator", () => {
     expect(newPerson.venusReturn).toEqual("Congrats! You have already passed the average life expectancy for a person in your demographic categories on Venus by 32.2 years!")
   })
 
+  test("should provide a different return given age < life expectancy on Mars", () => {
+    const newPerson = new Calculator(25, "prefer not to say", "France")
+    newPerson.earthExpectancy()
+    newPerson.marsCalc()
+    newPerson.yearsLeft()
+    newPerson.marsReturnText()
+    expect(newPerson.marsReturn).toEqual("Hooray! The average life expectancy on Mars is still 59.3 years away for you!")
+  })
+
 })
