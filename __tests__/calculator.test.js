@@ -139,7 +139,7 @@ describe("Calculator", () => {
     expect(newPerson.earthReturn).toEqual("Wow! You have exactly reached the average life expectancy for a person in your demographic categories!")
   })
 
-  test("should provide a different return given age = life expectancy on Earth", () => {
+  test("should provide a different return given age > life expectancy on Earth", () => {
     const newPerson = new Calculator(91.5, "female", "USA")
     newPerson.earthExpectancy()
     newPerson.yearsLeft()
@@ -155,5 +155,15 @@ describe("Calculator", () => {
     newPerson.mercuryReturnText()
     expect(newPerson.mercuryReturn).toEqual("Hooray! The average life expectancy on Mercury is still 10.1 years away for you!")
   })
+
+  test("should provide a different return given age = life expectancy on Mercury", () => {
+    const newPerson = new Calculator(17.424, "non-binary/gender-fluid", "Mexico")
+    newPerson.earthExpectancy()
+    newPerson.mercuryCalc()
+    newPerson.yearsLeft()
+    newPerson.mercuryReturnText()
+    expect(newPerson.mercuryReturn).toEqual("Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Mercury!")
+  })
+
 
 })

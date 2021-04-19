@@ -78,6 +78,9 @@ export default class Calculator {
     if (this.mercuryYearsLeft > 0) {
       this.mercuryReturn = "Hooray! The average life expectancy on Mercury is still " + `${this.mercuryYearsLeft}` + " years away for you!"
       return this.mercuryReturn
+    } else if (this.mercuryYearsLeft === 0) {
+      this.mercuryReturn = "Wow! You have exactly reached the average life expectancy for a person in your demographic categories on Mercury!"
+      return this.mercuryReturn
     }
   }
 
